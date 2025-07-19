@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: rgb(5, 55, 120);
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  
+  top: 0;
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  backdrop-filter: blur(10px); 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  /* z-index: 1000; */
+  margin-left: 730px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff; 
+  font-weight: 600;
+  
+}
+
+.money{
+  background: url(./../../public/6237eb83-2ace-455f-969f-e4536104022c.jpg);
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  
+
+}
+
+.text{
+  padding-top: 150px;
+}
+
+
+
+
+h1 {
+  font-size: 2.5rem;
+  color: rgb(1, 4, 40);
+  text-align: center;
+  
+  
+}
+
+p{
+  text-align: center;
+   color: rgb(1, 4, 40);
+}
+
+button{
+  /* background-color: green; */
+  margin-right: 30px;
+  width: 100px;
+  border-radius: 7px;
+  border: 2px solid rgb(1, 34, 71);
+  ;
+  
+  
+
+}
+
