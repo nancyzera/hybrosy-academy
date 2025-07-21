@@ -1,0 +1,170 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0aff;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--foreground);
+  color: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navigation{
+  width:100%;
+  /* background-color:darkblue; */
+}
+nav{
+  /* background-color: darkblue; */
+  justify-content: flex-end;
+  height:80px;
+  align-items: center;
+padding-right: 40px;
+
+}
+nav ul {
+ display:flex;
+ gap:32px;
+ list-style:none;
+ padding:0;
+ margin:0;
+ /* background-color:green; */
+ margin-left:560px;
+ /* font-size:24px; */
+ padding-top: 30px;
+}
+
+nav ul li{
+color:grey;
+cursor: pointer;
+/* background-color:red; */
+}
+.picture{
+
+}
+.body {
+  background: url("/Rectangle 180.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 250px;
+}
+
+.sect{
+  width: 90%;
+  height: 100px;
+display: inline-flex;
+justify-content: space-between;
+/* align-items: center; */
+padding: 0 100px;
+margin-top: 20px;
+}
+.boxes{
+  width: 300px;
+  height: 400px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  /* margin: 0 auto; */
+  margin-top: 20px;
+
+}
+
+.count{
+  width:100%;
+  /* background-color: purple; */
+  height: 950px;
+  flex-wrap: wrap;
+  display:inline-flex;
+  /* justify-content: space-between; */
+  gap: 10px;
+  
+}
+
+.box{
+  width: 250px;
+  height: 190px;
+  /* background-color: pink; */
+ margin: 0 auto;
+ padding-top: 18px;
+}
+ 
+.line{
+  /* background-color: black; */
+  /* width: 300px; */
+  /* height: 40px; */
+ padding-left: 30px;
+ gap: 100px;
+ margin-top:80px;
+}
+.call{
+  width:90%;
+  height: 350px;
+  background-color: #9DCCFF;
+  display: inline-flex;
+  margin-left: 50px;
+  gap: 220px;
+  padding-left: 100px;
+  padding-top: 40px;
+}
+.paragraph{
+width: 400px;
+height: 300px;
+/* background-color:  blueviolet; */
+text-align:center;
+}
+
+.imager{
+  width: 550px;
+  height: 300px;
+  /* background-color:  lightblue; */
+  margin-left: 20px;
+}
+.recom{
+  width: 100%;
+  height: 450px;
+  background-color: #9DCCFF;
+ display: inline-flex;
+ gap: 12px;
+ flex-wrap: wrap;
+}
+.footer{
+width: 100%;
+height: 290px;
+background-color: #252641;
+color: white;
+}
+.conte{
+/* background-color: green; */
+display: inline-flex;
+gap: 20px;
+width: 300px;
+height: 100px;
+margin-top: 20px;
+margin-left: 490px;
+
+
+
+
+
+
+
+}
+
+
+
+
